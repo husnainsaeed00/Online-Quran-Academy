@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Created by HUSNAIN SAEED -->
+<html lang="en">
+<%- include('head'); -%>
+
+  <body>
+    <section>
+      <br/>
+      <br/>
+      <hr/>
+      <% if(data!==null){ %>
+        <h2><%- data %></h2>
+        <% }%>
+          <div class="container">
+            <h2>Enroll YourSelf</h2>
+            <form action="/enroll" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Firstname</label>
+                <input type="text" class="form-control" id="Firstname" name="fname" aria-describedby="emailHelp"
+                  placeholder="Enter FirstName" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Secondname</label>
+                <input type="text" class="form-control" id="Secondname" name="lname" aria-describedby="emailHelp"
+                  placeholder="Enter SecondName" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Age</label>
+                <input type="text" class="form-control" id="Age" name="age" aria-describedby="emailHelp"
+                  placeholder="Enter Age" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Course</label>
+                <input type="text" class="form-control" id="Course" name="course" aria-describedby="emailHelp"
+                  placeholder="Enter Course" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <input type="submit" value="Submit" class="btn btn-primary" />
+            </form>
+          </div>
+    </section>
+  </body>
+  <!-- footer section start -->
+  <%- include('foot'); -%>
+
+</html>

@@ -1,0 +1,6 @@
+Bhai is ma sign up..login.and..admin section to control student profiles enrolled
+ in given courses..admin can delete .
+When a user clicks on get admission..it brings control on courses section ...by 
+clicking on more details button on each course ...they will enroll
+
+first name second name ..email age eaghaira or course name

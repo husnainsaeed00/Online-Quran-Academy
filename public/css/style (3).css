@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/*----navbar-styling---*/
+.navbar{
+  position: fixed;
+  background:rgb(20, 220, 137);
+  width: 100px;
+
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+
+}
+.navbar .menu li a{
+  color: #ff7777;
+}

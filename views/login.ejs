@@ -1,0 +1,38 @@
+
+
+  <html>
+    <%- include('head'); -%>
+    <body>
+
+      <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-50">
+            <div class="col-lg-8 col-xl-6">
+              <h2>Login Form</h2>
+              <form class="px-md-2" action="/login" method="POST">
+      
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example1q" name="email" class="form-control" />
+                  <label class="form-label" for="form3Example1q">Email</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example1q" name="password" class="form-control" />
+                  <label class="form-label" for="form3Example1q">Password</label>
+                </div>
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </body>
+    <footer>
+      <%- include('foot'); -%>
+    </footer>
+    
+  </html>
+ 

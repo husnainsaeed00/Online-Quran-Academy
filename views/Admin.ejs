@@ -1,0 +1,53 @@
+<!-- Created by HUSNAIN SAEED -->
+<html lang="en">
+<%- include('head'); -%>
+<body>
+ 
+    <section>
+      <br/>
+      <br/>
+      <hr/>
+    <h1 class="display-1">AdminPanel</h1>
+    <h3 class="h3">Enrolled Students</h3>
+    <div class="container" >
+
+        <table class="table" >
+            <thead>
+                <th scope="col">Id</th>
+                <th scope="col">ٖFirstname</th>
+                <th scope="col" >Lastname</th>
+                <th scope="col" >Age</th>
+                <th scope="col">Email</th>
+                <th scope="col">Course</th>
+            </thead>
+            <tbody>
+                
+                <% enrolldata.map((d)=>{ %>
+                    <tr>
+                        <td scope="row" > <%= d.Id %> </td>
+                        <td> <%= d.Fname %> </td>
+                        <td> <%= d.Lname %> </td>
+                        <td> <%= d.Age %> </td>
+                        <td> <%= d.Email %> </td>
+                        <td> <%= d.Course %> </td>
+                    </tr>
+                    <% }) %>
+            </tbody>
+        </table>
+      <h2>delete User</h2>
+      <form class="px-md-5" action="/DeletUser" method="POST">
+      
+        <div class="form-outline mb-2">
+          <input type="text" id="form3Example1q" name="userId" class="form-control" />
+          <label class="form-label" for="form3Example1q">Email</label>
+        </div>
+
+        <button type="submit" onclick="return confirm('Are you sure?')" class="btn btn-success btn-lg mb-1">delete</button>
+
+      </form>
+    </div>
+    </section>
+</body>
+<%- include('foot'); -%>
+
+</html>
